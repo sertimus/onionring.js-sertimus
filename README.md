@@ -7,13 +7,14 @@ onionring.js-sertimus is a fork of [onionring.js](https://garlic.garden/onionrin
 * Functions separated into their own `onionring-functions.js` file.
 * Styles incorporated into `onionring-widget.js` source.
 * Slightly modified navigation.
+* Modified `onionring-index.js` to print out the site list in a different format.
 * Inclusion of [Cleanslate](http://cleanslatecss.com/) to avoid external styles spilling into the widget as much as possible.
 
 ## How to use??
 
 ### Hosting setup
 1) Download the source, extract and place the files in your directory of choice on the web host. 
-2) Edit the sites list in `onionring-variables.js` with the member sites in your webring, with protocol variants as appropriate (e.g. http, https, both).
+2) Edit the `sites` object in `onionring-variables.js` with the member sites in your webring, with protocol variants as appropriate (e.g. http, https, both).
     * The URLs in the `sites` list should only start with the domain part and end without a trailing slash, followed by an array of protocols without the colon. e.g. `'thisis.anexampleurl.com': ['http','https']`
     * More than one site is required for the random site link to work, otherwise it will work weirdly and go to `www.undefined.com`. I'll fix this later. 
     * `ringName` is the name of your webring.
@@ -46,3 +47,9 @@ onionring.js-sertimus is a fork of [onionring.js](https://garlic.garden/onionrin
 ```
 
 4) Have a look at your webpage and see the results!
+
+## License
+
+onionring.js-sertimus and its parent codebase, [onionring.js](https://garlic.garden/onionring/), are licensed under the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html).
+
+This codebase may include other projects which may use a different license. [Cleanslate](http://cleanslatecss.com/) uses The MIT License (MIT) (https://opensource.org/licenses/mit-license.php).
