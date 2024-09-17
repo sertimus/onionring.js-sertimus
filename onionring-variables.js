@@ -17,9 +17,7 @@
 let chaoring = {
     sites: {
         'sertimus.xyz': ['http', 'https'],
-        'rachychel.neocities.org': ['https'],
-	    'mysticwish.monster': ['http'],
-	    'obspogon.neocities.org': ['https']
+        'example.com': ['https']
     },
     ringName: 'Chao Ring',
     ringID: 'chao-ring',
