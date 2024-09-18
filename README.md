@@ -13,7 +13,7 @@ onionring.js-sertimus is a fork of [onionring.js](https://garlic.garden/onionrin
 ## How to use??
 
 ### Hosting setup
-1) Download the source, extract and place the files in your directory of choice on the web host. 
+1) Download the source, extract and place the files in your directory of choice on the web host. All files must be in the same directory, otherwise Cleanslate will not work!
 2) Edit the `sites` object in `onionring-variables.js` with the member sites in your webring, with protocol variants as appropriate (e.g. http, https, both).
     * The URLs in the `sites` list should only start with the domain part and end without a trailing slash, followed by an array of protocols without the colon. e.g. `'thisis.anexampleurl.com': ['http','https']`
     * More than one site is required for the random site link to work, otherwise it will work weirdly and go to `www.undefined.com`. I'll fix this later. 
