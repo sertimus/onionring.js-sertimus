@@ -18,7 +18,7 @@ cleanSlate.setAttribute('rel', 'stylesheet');
 
 // Loading Cleanslate from same directory this script is being loaded from!
 var thisScriptURL = new URL(document.currentScript.src);
-thisScriptURL = thisScriptURL.host + thisScriptURL.pathname; // Accounting for file:// URLs
+thisScriptURL = thisScriptURL.host + thisScriptURL.pathname;
 thisScriptURL = thisScriptURL.split("/");
 thisScriptURL.pop();
 thisScriptURL = thisScriptURL.toString().replaceAll(',', '/');
