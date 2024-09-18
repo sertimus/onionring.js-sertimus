@@ -14,8 +14,16 @@
 var tag = document.getElementById(chaoring.ringID); //find the widget on the page
 
 var cleanSlate = document.getElementsByTagName('head')[0].appendChild(document.createElement('link'));
-cleanSlate.setAttribute('rel', 'stylesheet')
-cleanSlate.setAttribute('href', '//sertimus.xyz/chaoring/cleanslate.css');
+cleanSlate.setAttribute('rel', 'stylesheet');
+
+// Loading Cleanslate from same directory this script is being loaded from!
+var thisScriptURL = new URL(document.currentScript.src);
+thisScriptURL = thisScriptURL.host + thisScriptURL.pathname; // Accounting for file:// URLs
+thisScriptURL = thisScriptURL.split("/");
+thisScriptURL.pop();
+thisScriptURL = thisScriptURL.toString().replaceAll(',', '/');
+
+cleanSlate.setAttribute('href', chaoring.thisProtocol + "://" + thisScriptURL + '/cleanslate.css');
 
 tag.classList.add("cleanslate");
 
