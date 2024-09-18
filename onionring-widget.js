@@ -23,7 +23,7 @@ thisScriptURL = thisScriptURL.split("/");
 thisScriptURL.pop();
 thisScriptURL = thisScriptURL.toString().replaceAll(',', '/');
 
-cleanSlate.setAttribute('href', chaoring.thisProtocol + "://" + thisScriptURL + '/cleanslate.css');
+cleanSlate.setAttribute('href', chaoring.thisProtocol + "://" + thisScriptURL + '/cleanslate/cleanslate.css');
 
 tag.classList.add("cleanslate");
 
